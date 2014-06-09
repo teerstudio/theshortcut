@@ -3,9 +3,28 @@
 <head>
 <meta charset="utf-8">
 <title><?=$title?></title>
+
+<!--CSS-->
 <link type="text/css" rel="stylesheet" href="<?=base_url('css')?>/reset.css">
 <link type="text/css" rel="stylesheet" href="<?=base_url('css')?>/master.css">
 <?=$css_url?>
+
+<!--JAVASCRIPT-->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function () {
+	   
+             $('#category-list').click(function () {
+				
+			$('#category-search').show();
+       
+        });
+		$('#category-search').mouseout(function () {
+			$('#category-search').hide();
+       
+        });
+});
+</script>
 </head>
 
 <body>
@@ -14,6 +33,11 @@
   <div id="header" class="clearfix">
     <div id="logo">THE SHORTCUT <i><strong>2014</strong></i></div>
     <div id="search">
+    
+      <div id="category-search-container">
+          <div id="category-search" style="display:none;"></div>
+        </div>
+        
       <input name="" type="text" id="search-input">
       <div id="category-list"></div>
       <button class="btn btn-search btn-search-a"> <img src="<?=base_url('images')?>/magnifier.png" align="absmiddle"> ค้นหา </button>

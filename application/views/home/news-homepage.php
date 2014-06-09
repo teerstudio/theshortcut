@@ -3,7 +3,6 @@
     <div id="news">
       <div class="clearfix">
 
-      
         <article class="news-box mr"> <img src="<?=base_url('images')?>/temp.png">
           <div class="txt">
             <h4>Software Expo Asia 2013 September </h4>

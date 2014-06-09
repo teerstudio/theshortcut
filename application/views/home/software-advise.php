@@ -16,6 +16,7 @@
         <div class="line-top"></div>
         <div class="clearfix">
 
+
 <?php
 /*
 $sqlProducts="SELECT

@@ -7,7 +7,7 @@ $(document).ready(function () {
 			$('#category-search').show();
        
         });
-		$('#category-search').mouseout(function () {
+		$('#category-search').mouseleave(function () {
 			$('#category-search').hide();
        
         });

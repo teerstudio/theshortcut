@@ -198,15 +198,37 @@ a img{ border:none; }
 #category-search{
 	position:absolute;
 	z-index:20;
-	left: 30px;
+	left: 0px;
 	top: 34px;
-	padding: 20px 0;	
+	padding: 20px;	
 	font-size:16px;
 	background: #FFFFFF;
     border: thin solid #989898;
-	width:712px;
+	width:703px;
 	min-height:400px;
 }
+
+.menu-category-column{
+	width:237px;
+	float:left;
+}
+
+.menu-category-column li h3{
+  color: #96CDD4;
+  font-size: 14px;
+  font-weight:bold;
+}
+
+.category-sub-menu li {
+  color: #808080 !important;
+  font-size: 12px !important;
+  padding:5px 0;
+}
+
+.category-sub-menu {
+  margin-top: 23px;
+}
+
 
 /*--------------- END HEADER ---------------*/
 

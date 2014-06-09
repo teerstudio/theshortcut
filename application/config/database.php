@@ -56,7 +56,7 @@ if($_SERVER['SERVER_NAME']=='localhost'){
 		$db['default']['database'] = 'shortcut';
 	}else{
 		$db['default']['hostname'] = 'localhost';
-		$db['default']['username'] = 'shortcut';
+		$db['default']['username'] = 'root';
 		$db['default']['password'] = 'master99';
 		$db['default']['database'] = 'shortcut';
 	}

@@ -69,6 +69,8 @@
 
 
 <!--FOOTER SCRIPT-->
+<script src="<?=base_url('js')?>/main.js"></script>
+
 <link rel="stylesheet" type="text/css" href="<?=base_url('js/CreativeButtons/css')?>/component_custom.css" />
 <script src="<?=base_url('js/CreativeButtons/js')?>/modernizr.custom.js"></script> 
 

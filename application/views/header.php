@@ -11,20 +11,6 @@
 
 <!--JAVASCRIPT-->
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
-<script type="text/javascript">
-$(document).ready(function () {
-	   
-             $('#category-list').click(function () {
-				
-			$('#category-search').show();
-       
-        });
-		$('#category-search').mouseout(function () {
-			$('#category-search').hide();
-       
-        });
-});
-</script>
 </head>
 
 <body>

@@ -2,6 +2,7 @@
   <div class="outer-container">
     <div id="news">
       <div class="clearfix">
+
         <article class="news-box mr"> <img src="<?=base_url('images')?>/temp.png">
           <div class="txt">
             <h4>Software Expo Asia 2013 September </h4>
@@ -30,6 +31,8 @@
               Queen Sirikit National Convention Center</p>
           </div>
         </article>
+        
+        
       </div>
       <div class="view-more-link">
         <p><a href="">ดูข่าวสารทั้งหมด >></a></p>

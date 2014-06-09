@@ -1,0 +1,213 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+/*--------------- NEWS ---------------*/
+#news-container{
+	background: #F9F9F9; width:100%;
+	padding-bottom:40px;
+	
+}
+
+#news-container .mr{
+	margin-right:12px;
+}
+
+#news{
+	width:960px;
+	margin:auto;
+}
+
+.news-box{
+	margin-top:20px;
+	width:228px;
+	border: #989898 thin solid;
+	height:330px;
+	float:left;
+	background:#FFF;
+}
+
+.news-box img{
+	width:228px;
+	height:164px;
+}
+
+.news-box .txt{
+	padding:17px;
+}
+
+.news-box .txt h4{
+	font-weight:bold;
+	margin-bottom:20px;
+}
+
+.news-box .txt p{
+	color:#808080;
+}
+
+.view-more-link{
+	text-align:right;
+	margin-top:20px;
+}
+
+.view-more-link p{
+	font-weight:bold;
+}
+
+/*--------------- END NEWS ---------------*/
+
+
+
+/*--------------- SOFTWARE ADVISE ---------------*/
+
+#software-advise-container{
+	background: #F1F1F1; width:100%; padding:40px 0;
+}
+
+#software-advise{
+	width:960px;
+	margin:auto;
+}
+
+#software-advise .box{
+	border: #989898 thin solid;
+	width:100%;
+	background:#FFF;
+	min-height:427px;
+}
+
+.line-top{
+	background:#4D4D4D;
+	height:15px;
+	margin:22px 0 40px 0;
+}
+
+
+.ribbon-title-container, .ribbon-more-container {
+	position:relative;
+}
+
+.ribbon-title{
+	position:absolute;
+	z-index:20;
+	background:url(../images/ribbon-tile.png) no-repeat; width:247px; height:53px;
+	line-height:40px;
+	padding-left:54px;
+	left:-16px;
+	top:8px;
+	color:#FFFFFF;
+	font-size:16px;
+}
+
+#software-advise .box-inside{
+	margin: 0 20px; height:290px; float:left; width:200px; text-align:center;
+}
+
+#software-advise .box-inside:hover{
+	border-bottom:#379CCC thin solid;	
+}
+
+
+#software-advise .box-inside img{
+	width:150px; height:150px;
+}
+
+.box-inside .txt{
+	padding:17px; text-align:left;
+}
+
+.box-inside .txt a{
+	color:#4D4D4D;
+	font-weight:bold;
+	margin-bottom:20px;
+}
+
+.box-inside .txt a:hover{
+	color:#4D4D4D;
+}
+
+.box-inside .txt p{
+	color:#808080;
+}
+
+
+
+.ribbon-more{
+	position:absolute;
+	z-index:20;
+	background:url(../images/ribbon-more.png) no-repeat right; width:150px; height:41px;
+	background-position: 0px 0px;
+	line-height:30px;
+/*	padding-left:30px;
+*/	right:-13px;
+	top:380px;
+	color:#FFFFFF;
+	font-size:16px;
+	text-align:center;
+	cursor:pointer;
+}
+
+.ribbon-more:hover{
+	background-position: 0px -41px;
+}
+
+.ribbon-more a{
+	color:#FFFFFF;
+}
+
+/*.ribbon-more a:hover{
+	color:#B2B2B2;
+}
+*/
+
+/*--------------- END SOFTWARE ADVISE ---------------*/
+
+
+
+
+/*--------------- SOFTWARE CATEGORY ---------------*/
+#category-container{
+	background: #F9F9F9; width:100%;
+	padding:40px 0;
+}
+
+#category{
+	width:960px;
+	margin:auto;
+}
+
+#title-container{
+	background:url(../images/blue-line.png) center repeat-x; height:35px; float:left; width:690px;
+/*	height:
+*/}
+
+#category h2{
+	font-size:32px; float:left; width:270px;
+}
+
+#category ul{
+	float:left; width:444px; margin:20px 0 0 20px;
+}
+
+/*#category ul li:before {
+  content: ">";
+  left: -5px;
+  position: relative;
+}*/
+#category ul li {
+	padding:5px 0;
+}
+#category ul li a{
+  color: #B2B2B2;
+  font-size: 18px;
+  padding:5px 0;
+}
+
+#category ul li a:hover{
+	color: #808080;
+}
+
+
+
+/*--------------- END SOFTWARE CATEGORY ---------------*/

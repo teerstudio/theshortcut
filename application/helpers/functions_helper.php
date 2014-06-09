@@ -5,9 +5,13 @@ function mysql_date_format($date){
 }
 
 
-function chkImg($p=''){
+function chkImg($p='',$n=''){
 	if(!file_exists("$p")){
-		return 'images/no.png';
+		if(!file_exists("$n")){
+			return 'images/no.png';
+		}else{
+			return 'images/'.$n;
+		}
 	}else{
 		return $p;
 	}

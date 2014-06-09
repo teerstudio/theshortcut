@@ -219,7 +219,7 @@
 	border: none;
 	white-space: nowrap;
 	text-overflow: ellipsis;
-	width: 222px;
+	width: 166px;
 	display: block;
 	overflow: hidden;
 }
@@ -228,8 +228,8 @@
 	/* white-space: nowrap; */
 	white-space: inherit;
 	text-overflow: ellipsis;
-	width: 222px;
-	height: 64px;
+	width: 166px;
+	height: 70px;
 	display: block;
 	overflow: hidden;
 }

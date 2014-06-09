@@ -139,11 +139,12 @@
 .btn-search{
 	background:#00c6ff;
 	color: #fff;
-padding: 5px 0px;
-width:106px;
-font-family: Tahoma, Geneva, sans-serif;
-margin: 0 6px !important;
-float:left;
+	padding: 5px 0px;
+	width:106px;
+	font-family: Tahoma, Geneva, sans-serif;
+	margin: 0 6px !important;
+	float:left;
+	height:34px;
 }
 
 .btn-search-a:hover,

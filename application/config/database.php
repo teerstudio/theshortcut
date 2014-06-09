@@ -48,10 +48,25 @@
 $active_group = 'default';
 $active_record = TRUE;
 
-$db['default']['hostname'] = 'localhost';
-$db['default']['username'] = '';
-$db['default']['password'] = '';
-$db['default']['database'] = '';
+if($_SERVER['SERVER_NAME']=='localhost'){
+	if($_ENV['COMPUTERNAME']=='TEER-PC'){
+		$db['default']['hostname'] = 'localhost';
+		$db['default']['username'] = 'root';
+		$db['default']['password'] = 'root';
+		$db['default']['database'] = 'shortcut';
+	}else{
+		$db['default']['hostname'] = 'localhost';
+		$db['default']['username'] = 'shortcut';
+		$db['default']['password'] = 'master99';
+		$db['default']['database'] = 'shortcut';
+	}
+}else{
+	$db['default']['hostname'] = 'localhost';
+	$db['default']['username'] = 'primoprime_sc';
+	$db['default']['password'] = '12345679sc';
+	$db['default']['database'] = 'primoprime_sc';
+}
+
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;

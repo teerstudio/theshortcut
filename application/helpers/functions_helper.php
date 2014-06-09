@@ -32,4 +32,30 @@ function pValue($fValue,$fName=''){
 		}
 	}
 }
+
+function getCategory($lang_code, $type_id='', $category_id='',$order=''){
+	$CI =& get_instance();
+	
+	if($order==''){
+		$order = ' order by type_name, category_name';
+	}
+	
+	$sql = "SELECT
+    type_name
+    , category_name
+    , category_language_code
+    , type_language_code
+    , type_id
+    , category_id
+FROM
+    view_type_category
+	WHERE type_language_code = '".$lang_code."'
+	AND category_language_code = '".$lang_code."'
+	".$order."
+	";
+	$result = $CI->db->query($sql);
+	$view_type_category['num_rows'] = $result->num_rows();
+	$view_type_category['data'] = $result->result_array();
+	return $view_type_category;
+}
 ?>

@@ -1,3 +1,7 @@
+<?php
+$lang_code = 'th';
+$category = getCategory($lang_code);
+?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -21,7 +25,28 @@
     <div id="search">
     
       <div id="category-search-container">
-          <div id="category-search" style="display:none;"></div>
+          <div id="category-search" style="display:none;">
+          <?php
+		  	$current_type = '';
+		  	 for($i=0; $i<$category['num_rows'];$i++){
+				 if($current_type != $category['data'][$i]['type_name']){
+					 $current_type = $category['data'][$i]['type_name'];
+					 echo '<ul class="menu-category-column">
+          <li><h3>'.$current_type.'</h3>
+           <ul class="category-sub-menu">'; }
+		    $cat_name = $category['data'][$i]['category_name'];
+               echo '<li>'.$cat_name.'</li>';
+		 if($current_type != $category['data'][$i]['type_name']){
+			 $current_type = $category['data'][$i]['type_name'];
+            echo '</ul>
+          </li>
+        </ul>';
+		 }
+					 
+				
+			 }
+		  ?>
+          </div>
         </div>
         
       <input name="" type="text" id="search-input">

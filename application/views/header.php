@@ -12,7 +12,7 @@
 <section id="header-container">
 <div class="outer-container">
   <div id="header" class="clearfix">
-    <div id="logo">THE SHORTCUT</div>
+    <div id="logo">THE SHORTCUT <i><strong>2014</strong></i></div>
     <div id="search">
       <input name="" type="text" id="search-input">
       <div id="category-list"></div>

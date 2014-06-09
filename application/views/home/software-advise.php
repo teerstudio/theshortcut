@@ -69,20 +69,25 @@ FROM
 $query = $this->db->query($sqlProducts);
 
 //$row = $query->row_array();
-$row = $query->result();
+//$row = $query->result();
 //echo '<pre>';
 //print_r($row);
 //echo '</pre>';
+$pLogo;
+	foreach ($query->result() as $row){
+		$pLogo_old = 'products/'.$row->product_id.'/m/'.$row->product_logo;
+		$pLogo = chkImg($pLogo_old);
 ?>
 
-          <div class="box-inside"> <img src="<?=base_url('images')?>/temp.png"> 
+          <div class="box-inside"><img style="background:url(<?php echo $pLogo?>) no-repeat center center;background-size:contain" src="<?=base_url('images')?>/temp.png"> 
            <div class="txt">
-            <p><a href="">โปรแกรมบริหารการผลิต (Manufacturing)</a></p>
-            <p>26-28, 2013 10.00-20.00 hrs. 
-              Queen Sirikit National Convention Center</p>
+            <p><a href="" class="PCHeaderText"><?php echo $row->product_name?></a></p>
+            <p class="PCDetailText"><?php echo substr($row->product_detail,0,200);?></p>
           </div>
           </div>
-
+<?php
+	}
+?>
 
         </div>
       </div>

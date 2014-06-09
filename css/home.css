@@ -212,3 +212,24 @@
 
 
 /*--------------- END SOFTWARE CATEGORY ---------------*/
+
+
+
+.PCHeaderText {
+	border: none;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	width: 222px;
+	display: block;
+	overflow: hidden;
+}
+.PCDetailText {
+	border: none;
+	/* white-space: nowrap; */
+	white-space: inherit;
+	text-overflow: ellipsis;
+	width: 222px;
+	height: 64px;
+	display: block;
+	overflow: hidden;
+}
